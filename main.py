@@ -132,7 +132,14 @@ TIPOS DE DATOS
 -string
 -int (entero)
 -float (decimales)
--boleano (boolean)
+-boleano (boolean). Son falsos los siguientes datos cuando uses la palabra reservada "not"
+False
+0
+0.0
+"" (string vacío)
+[] (lista vacía)
+{} (diccionario vacío)
+None
 
 CONSTANTES= "no existen"
 SOlo se pone el nombre en mayusculas y se toma como "de lectura", así CONSTANTE = 3.14, pero sigue siendo una variable
@@ -143,11 +150,29 @@ Siempre que uses "/" habrá como resultado un número flotante
 OPERADORES
 ==, >, <, >=, <=, !=
 
-OPERADORES
-and, or, not
+OPERADORES 
+and(todos deben ser verdaderos)
+or(al menos 1 debe de ser verdadero)
+not(devuelve lo opuesto)
+
+#puedes negar una, 2 y hasta 3 veces
+print(not boleano)
+print(not not boleano)
+print(not not not boleano)
+
+
 
 con AND todos los valores debes de ser VERDADEROS
 con OR al menos "un" valor debe de ser VERDADERO
+
+FUNCIONES QUE HE APRENDIDO:
+type() : te dice el tipo de dato que tienes
+input("texto"): sirve para que reciba información del usuario
+int() : transforma de texto a int (numero entero)
+float() : transforma el texto a tipo de dato flotante
+str(): transforma el número a texto
+
+
 
 """
 
@@ -175,7 +200,7 @@ resultado_tres = numero_uno >numero_dos and numero_uno < numero_tres
 
 resultado_cuatro = numero_uno != numero_dos
 
-#otra forma de escribir el código
+#otra forma de escribir el código, para que no sea compleja de leer
 resultado_cinco = (
     True
     and True
@@ -183,6 +208,7 @@ resultado_cinco = (
     and resultado_cuatro > numero_uno
 )
 
+resultado_con_or = 2>1 or 4>8 or 5>9
 
 print(Nombre)
 # "type()" Te dice el tipo de dato
@@ -212,3 +238,26 @@ resultado_cinco = (
     or resultado_dos != resultado_tres
     or resultado_cuatro > numero_uno
 )
+
+print(resultado_cinco)
+print("el resultado es:", not resultado_con_or)
+boleano = []
+print(not boleano)
+#puedes negar una, 2 y hasta 3 veces
+print(not not boleano)
+print(not not not boleano)
+
+nombre = input("¿Cómo te llamas? ")
+edad = int(input("Dime tu edad ")) 
+estado = input("¿En que estado vivies? ") 
+peso = float(input("¿Cual es tu peso en kg?"))
+mascota = input("¿Tienes mascota? (yes/no) ") == "yes" #boolean
+transforma = str(input("Dame un número para que transforme el tipo de dato int a str: "))
+print("Te llamas: ",nombre, type(nombre))
+print("Tienes: ",edad, " años", type(edad))
+print("Y vives en :",estado , type(estado))
+print("Pesas:", peso, type(peso))
+print(mascota, type(mascota))
+print(transforma, type(transforma))
+
+#int() : Es una función para transformar el tipo de dato, ya que a veces se ingresa como 
