@@ -253,6 +253,7 @@ estado = input("¿En que estado vivies? ")
 peso = float(input("¿Cual es tu peso en kg?"))
 mascota = input("¿Tienes mascota? (yes/no) ") == "yes" #boolean
 transforma = str(input("Dame un número para que transforme el tipo de dato int a str: "))
+
 print("Te llamas: ",nombre, type(nombre))
 print("Tienes: ",edad, " años", type(edad))
 print("Y vives en :",estado , type(estado))
@@ -261,3 +262,15 @@ print(mascota, type(mascota))
 print(transforma, type(transforma))
 
 #int() : Es una función para transformar el tipo de dato, ya que a veces se ingresa como 
+
+#Variable multiple
+primer_nombre, edad_primer_nombre, estado_civil = "fulano",15, True
+print(primer_nombre)
+print(edad_primer_nombre)
+print(estado_civil)
+
+saludo1 = "hola "
+saludo2 = "mundo"
+saludo_completo = saludo1 + saludo2
+print(saludo_completo)
+
