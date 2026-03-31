@@ -7,6 +7,7 @@ APUNTES
 #Aunque no le pongas parentesis pero les pongas "comas", Python se da cuenta de que es una Tupla
 #Si quieres crear una Tupla de 1 solo dígito, ponle una "coma" al final, así: numero = 0,
 #No se puede "añadir o quitar" elementos en una tupla
+# IMUTABLES: osea que no se puede sobreescribir
 
 
 
@@ -93,8 +94,31 @@ print(notas)
 #     ("usa", "5500"),
 #     ("canada", True)
 # ]
+---------------------------------------------------------------------
+Exercise 5: crea una tupla de tuplas
+
+alumnos = ["ric","Hugo","Peralta"]
+cursos = ("python","ruby","js")
+calificacion = [10,9,8]
+
+notas = tuple(zip(alumnos,cursos,calificacion))
+print(type(notas))
+print(notas)
+
+----------------------------------------------------------------------------
 
 
 
 
 """
+numbers = (
+    6,40,5,89,900,10
+)
+
+print(
+    len(numbers)
+)
+
+print(
+    sorted(numbers) #regresa lista ordenada ascendentemente
+)

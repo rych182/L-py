@@ -63,30 +63,62 @@ value = courses[len(courses)-1]
 #Leyendo de derecha a izquierda el array, esto nos lo permite python
 value_nuevo= courses[-1]
 
+"""
 print(courses)
 print(valor)
 print(len(courses))
 print(last_index)
 print(value)
 print(value_nuevo)
+"""
 
 sublista = courses[:3]
 sublista_2 = courses[2:4]
 sublista_3 = courses[3:]
+
+#te hace una copia
 sublista_4 = courses[:]
+
+#corta de 2 en 2
 sublista_saltos = courses[::2]
+
+#cambia el orden del array
 sublista_saltos_negativos = courses[::-1]
+
+#sirve para agregar un dato a un array, lo agrega al final
 courses.append("ruby on rails")
+
+#inserta un dato en el indice de la lista que le digas
 courses.append("Php")
+
+#inserta un dato en el indice de la lista que le digas
 courses.insert(0,"Java")
+
+#Une los arrays
 courses.extend(frameworks)
+
+#remueve el dato de la lista
 courses.remove("html")
+
+#remueve el "último"elemento de la lista,
 courses.pop()
+
+#también le puedes indicar en el parentesis que posicion deseas eliminar
 courses.pop(0)
+
+#también podemos almacenarlo en una variable
 variable_pop = courses.pop(1)
+
+#Genera una copia
 copia = courses.copy()
+
+#te pone al reves la lista(array)
 frameworks.reverse()
+
+#Ordena la lista de forma ascendente, de la A a la Z
 amigos.sort()
+
+#Forma descendente
 amigos.sort(reverse=True)
 
 print(sublista)
@@ -98,6 +130,8 @@ print(sublista_saltos)
 print(sublista_saltos_negativos)
 print(courses)
 print("Python" in courses)
+
+#Te muestra en que posicion del indice se encuentra ese dato
 print(courses.index("Python"))
 
 print(courses)
