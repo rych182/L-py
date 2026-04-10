@@ -172,7 +172,9 @@ int() : transforma de texto a int (numero entero)
 float() : transforma el texto a tipo de dato flotante
 str(): transforma el número a texto
 
+-----------------------------------------------------------------------------
 
+Exercise 1: Encontra
 
 """
 

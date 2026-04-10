@@ -7,7 +7,7 @@ APUNTES
 #Aunque no le pongas parentesis pero les pongas "comas", Python se da cuenta de que es una Tupla
 #Si quieres crear una Tupla de 1 solo dígito, ponle una "coma" al final, así: numero = 0,
 #No se puede "añadir o quitar" elementos en una tupla
-# IMUTABLES: osea que no se puede sobreescribir
+# IMUTABLES: osea que no se puede sobreescribir(cambiar sus valores), solo se usan y ya
 
 
 
@@ -106,19 +106,69 @@ print(type(notas))
 print(notas)
 
 ----------------------------------------------------------------------------
+Exercise 5: te ordena los números de una tupla/lista de manera ascendente
 
 
-
-
-"""
 numbers = (
     6,40,5,89,900,10
 )
 
+numeros = [22,1,30,4,5,16]
+
+print(
+    sorted(numbers) #regresa lista ordenada ascendentemente
+)
+
+print(sorted(numeros))
+----------------------------------------------------------------------
+Exercise 6: ordenarlos de manera descendente
+numbers = (
+    6,40,5,89,900,10
+)
+print(
+    sorted(numbers, reverse=True) #regresa lista ordenada ascendentemente
+)
+----------------------------------------------------------------------------
+Exercise 7: Cuantas veces se encuentra un número en la tupla/lista
+numbers = (
+    6,40,5,89,900,10
+)
+print(numbers.count(6))
+
+-------------------------------------------------------------------------
+Exercise 8: Otra manera de encontrar un número dentro de una tupla/lista
+Nota: "True" representa 1 en una Tupla también
+numbers = (
+    6,40,5,89,900,10
+)
+print(
+    3 in numbers
+)
+
+----------------------------------------------------------------------------
+Exercise 9: Mostrar en que indice se encuentra un valor
+Nota: tienes que poner "el dato" que "buscas"
+numbers = (
+    6,40,5,89,900,10,True
+)
+print(numbers.index(40))
+"""
+numbers = (
+    6,40,5,89,900,10,True
+)
+
+numeros = [22,1,30,4,5,16]
 print(
     len(numbers)
 )
 
 print(
-    sorted(numbers) #regresa lista ordenada ascendentemente
+    sorted(numbers, reverse=True) #regresa lista ordenada ascendentemente
 )
+
+print(numbers.count(6))
+
+print(
+    1 in numbers
+)
+print(numbers.index(40))
