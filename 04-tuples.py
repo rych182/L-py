@@ -106,7 +106,7 @@ print(type(notas))
 print(notas)
 
 ----------------------------------------------------------------------------
-Exercise 5: te ordena los números de una tupla/lista de manera ascendente
+Exercise 5: te ordena los números de una tuplas y listas de manera ascendente
 
 
 numbers = (
@@ -152,23 +152,6 @@ numbers = (
     6,40,5,89,900,10,True
 )
 print(numbers.index(40))
+
+
 """
-numbers = (
-    6,40,5,89,900,10,True
-)
-
-numeros = [22,1,30,4,5,16]
-print(
-    len(numbers)
-)
-
-print(
-    sorted(numbers, reverse=True) #regresa lista ordenada ascendentemente
-)
-
-print(numbers.count(6))
-
-print(
-    1 in numbers
-)
-print(numbers.index(40))

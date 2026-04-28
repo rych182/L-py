@@ -8,6 +8,10 @@ join    -> lista a string
 
 f string(FORMA MAS ACTUAL Y RECOMENDADA) -> Permite la "interpolacion"(osea permite poner llaves con nombres de variables)
 
+parametro sep: sirve para separar datos de variables 
+ejemplo:
+print("texto",var1,var2,sep="") 
+
 ----------------------------------
 Exercise 1: cortar un texto y convertirlo en lista con split
 name = "Ricardo Garrido Cruz"
@@ -102,6 +106,10 @@ print(texto)
 
 ----------------------------------------------------
 
-Exercise 12: 
+Exercise 12: utiliza el parametro "sep" para separar un texto
 
 """
+
+name = "Ric"
+apellido = "Garrido"
+print("Mi nombre completo es: ",name,apellido, sep="...")

@@ -16,15 +16,21 @@ value_nuevo= courses[-1]
 Sublistas: es cortar una parte de una lista, pones desde donde quieres que empiece a leer
 y donde quieres que termine de leer
 sublista = courses[0:3]
+
 sublista = courses[:3] #es lo mismo, python lo detecta
+
 #Puede empezar a mostar desde donde tu le digas
 sublista_2 = courses[3:5]
+
 #también puedes eludir el último número
 sublista_3 = courses[3:]
+
 # Y también puedes hacer una copia exacta, se le llama shallow copy
 sublista_4 = courses[:]
+
 #También sirve para dar saltos de 2 en 2 en el array
 sublista_saltos = courses[::2]
+
 #El número negativo te muestra todo la lista pero invertida, y puedes dar saltos de 2en2(-2) y 3en3(-3)
 sublista_saltos_negativos = courses[::-1]
 
@@ -49,6 +55,15 @@ BUSCAR DENTRO DE UNA LISTA
 print("Python" in courses) y te responde con un valor boolean
 
 MATRICES === Array multidimencional
+
+------------------------------------------------------------------------
+EXERCISE 1: Busqueda en listas cuando hay palabras en mayúsculas
+
+otro_texto = "Hola mundo otra vez!"
+print("hola" in otro_texto.lower())
+
+-------------------------------------------------------------------
+
 
 """
 
@@ -140,3 +155,7 @@ print(courses.clear())
 print(copia)
 print(frameworks)
 print(amigos)
+
+#Busqueda en listas cuando hay palabras en mayúsculas
+otro_texto = "Hola mundo otra vez!"
+print("hola" in otro_texto.lower())
