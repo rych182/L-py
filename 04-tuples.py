@@ -153,5 +153,13 @@ numbers = (
 )
 print(numbers.index(40))
 
+----------------------------------------------------------------
+
+
 
 """
+
+texto = "   curso, hola mundo mundial mundialista! curso  "
+print(
+    texto.upper()
+)
