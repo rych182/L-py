@@ -8,6 +8,7 @@ APUNTES
 #Si quieres crear una Tupla de 1 solo dígito, ponle una "coma" al final, así: numero = 0,
 #No se puede "añadir o quitar" elementos en una tupla
 # IMUTABLES: osea que no se puede sobreescribir(cambiar sus valores), solo se usan y ya
+#no acepta espacios vacios ni signos
 
 
 
@@ -41,18 +42,24 @@ print("--------------")
 
 Exericise 2: Desempaquetado de Tuplas
 
+
 animales= ("perro","gato","Pez","perico","liebre","tortuga")
 
-#   ESTO:
 #var1 = animales[0]
 #var2 = animales[1]
 #var3 = animales[2]
 #var4 = animales[3]
 #var5 = animales[4]
 
-# ES LO MISMO QUE ESTO: "Desempaquetado de Tuplas"
 #var1,var2,var3,var4,var5 = animales[0],animales[1],animales[2],animales[3],animales[4]
-#var1,var2,var3,var4,var5 = animales
+#NOTA: Debes desempaquetar todo, osea crear todas las variables, si no "fallara"
+var1,var2,var3,var4,var5,_ = animales
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+print(var5)
+
 
 ------------------------------------------------------------------------------------------------
 
@@ -70,6 +77,11 @@ animales= ("perro","gato","Pez","perico","liebre","tortuga")
 var1,var2,*restoAnimales,_,var3 = animales
 
 print(var1,var2,restoAnimales,var3)
+
+print(var1)
+print(var3)
+print(var4)
+print(var6)
 
 --------------------------------------------------------------------
 
@@ -107,7 +119,6 @@ print(notas)
 
 ----------------------------------------------------------------------------
 Exercise 5: te ordena los números de una tuplas y listas de manera ascendente
-
 
 numbers = (
     6,40,5,89,900,10
@@ -158,8 +169,5 @@ print(numbers.index(40))
 
 
 """
-
-texto = "   curso, hola mundo mundial mundialista! curso  "
-print(
-    texto.upper()
-)
+numeros = (1,2,"_",4)
+print(numeros)
