@@ -83,6 +83,24 @@ print(user)
 
 ----------------------------------------------------------
 
+Exercise 5: Agrega una nueva llave al diccionario sin usar funciones
+
+user = {
+    'name': 'Ric',
+    'age': 39,
+    'estado_civil': True,
+    'cursos': ["js","python","typescript"],
+    'tupla_apellidos': (123,True,"garrido","cruz"),
+    'settings': (123,True)
+}
+user['esposa'] = "Moñi"
+print(user)
+
+-------------------------------------------------------------
+
+
+
+
 """
 user = {
     'name': 'Ric',
@@ -92,4 +110,5 @@ user = {
     'tupla_apellidos': (123,True,"garrido","cruz"),
     'settings': (123,True)
 }
-print(user['name'])
+user['esposa'] = "Moñi"
+print(user)
